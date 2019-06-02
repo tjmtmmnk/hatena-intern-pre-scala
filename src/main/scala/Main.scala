@@ -7,19 +7,16 @@ object Main {
     val log_controller = new LogController(logs)
 
     println(log_controller.countError)
-    for(elm <- log_controller.groupByUser("guest")) {
+    for (elm <- log_controller.groupByUser("guest")) {
       println(elm.size)
     }
     println("---")
-    for(elm <- log_controller.groupByUser("john")) {
+    for (elm <- log_controller.groupByUser("john")) {
       println(elm.size)
     }
     println("---")
-    for(elm <- log_controller.groupByUser("frank")) {
+    for (elm <- log_controller.groupByUser("frank")) {
       println(elm.size)
     }
-      //    for(elm <- log_controller.groupByUser("frank")){
-//      println(elm.uri)
-//    }
   }
 }
